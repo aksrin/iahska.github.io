@@ -1,1 +1,80 @@
-https://html-css-js.com/?html=%3C!DOCTYPE%20html%3E%0A%3Chtml%3E%0A%20%20%3Chead%3E%0A%20%20%20%20%3Ctitle%3EHTML%20CSS%20JS%3C/title%3E%0A%20%20%3C/head%3E%0A%20%20%3Cbody%3E%0A%20%20%20%20%3Cdiv%20class=%22header%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href=%22#default%22%20class=%22logo%22%3EAkshai%20Srinivasan%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class=%22header-right%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class=%22active%22%20href=%22#home%22%3EHome%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href=%22#Astar%22%3EA*%20Search%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href=%22#Adversaria%22%3EAdversarial%20Search%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href=%22#Androi$*$dChess%22%3EAndroi$*$d%20Chess%3C/a%3E%0A%20%20%3C/div%3E%0A%20%20%20%20%20%20%0A%20%20%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cbr%3E%0A%20%20%20%20%3Cdiv%20class=%22main%22%3EThis%20webpage%20details%20the%20projects%20that%20I%20have%20completed.%20They%20include%20A*%20Search,%20Adversarial%20Search,%20and%20Androi$*$d%20Chess.%3C/div%3E%0A%20%20%3C/body%3E%0A%3C/html%3E&css=/*%20Style%20the%20header%20with%20a%20grey%20background%20and%20some%20padding%20*/%0A.header%20%7B%0A%20%20overflow:%20hi$*$dden;%0A%20%20background-color:%20#00ccff;%0A%20%20padding:%2020px%2010px;%0A%7D%0A%0A.main%20%7B%0A%20%20overflow:%20hi$*$dden;%0A%20%20background-color:%20#e6e6e6;%0A%20%20padding:%2020px%2010px%2020px%2010px;%0A%7D%0A%0A/*%20Style%20the%20header%20links%20*/%0A.header%20a%20%7B%0A%20%20float:%20left;%0A%20%20color:%20white;%0A%20%20text-align:%20center;%0A%20%20padding:%2012px;%0A%20%20text-decoration:%20none;%0A%20%20font-size:%2018px;%0A%20%20line-height:%2025px;%0A%20%20border-radius:%204px;%0A%7D%0A%0A/*%20Style%20the%20logo%20link%20(notice%20that%20we%20set%20the%20same%20value%20of%20line-height%20and%20font-size%20to%20prevent%20the%20header%20to%20increase%20when%20the%20font%20gets%20bigger%20*/%0A.header%20a.logo%20%7B%0A%20%20font-size:%2025px;%0A%20%20font-weight:%20bold;%0A%7D%0A%0A/*%20Change%20the%20background%20color%20on%20mouse-over%20*/%0A.header%20a:hover%20%7B%0A%20%20background-color:%20#ddd;%0A%20%20color:%20black;%0A%7D%0A%0A/*%20Style%20the%20active/current%20link*/%0A.header%20a.active%20%7B%0A%20%20background-color:%20dodgerblue;%0A%20%20color:%20white;%0A%7D%0A%0A/*%20Float%20the%20link%20section%20to%20the%20right%20*/%0A.header-right%20%7B%0A%20%20float:%20right;%0A%7D%0A%0A/*%20Add%20media%20queries%20for%20responsiveness%20-%20when%20the%20screen%20is%20500px%20wi$*$de%20or%20less,%20stack%20the%20links%20on%20top%20of%20each%20other%20*/%0A@media%20screen%20and%20(max-wi$*$dth:%20500px)%20%7B%0A%20%20.header%20a%20%7B%0A%20%20%20%20float:%20none;%0A%20%20%20%20display:%20block;%0A%20%20%20%20text-align:%20left;%0A%20%20%7D%0A%20%20.header-right%20%7B%0A%20%20%20%20float:%20none;%0A%20%20%7D%0A%7D&js=%0A
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CSS JS</title>
+    <style>/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #00ccff;
+  padding: 20px 10px;
+}
+
+.main {
+  overflow: hidden;
+  background-color: #e6e6e6;
+  padding: 20px 10px 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}</style>
+  </head>
+  <body>
+    <div class="header">
+        <a href="#default" class="logo">Akshai Srinivasan</a>
+        <div class="header-right">
+        <a class="active" href="#home">Home</a>
+        <a href="#Astar">A* Search</a>
+        <a href="#Adversaria">Adversarial Search</a>
+        <a href="#AndroidChess">Android Chess</a>
+  </div>
+      
+  
+    </div>
+    <br>
+    <div class="main">This webpage details the projects that I have completed. They include A* Search, Adversarial Search, and Android Chess.</div>
+  </body>
+</html>
