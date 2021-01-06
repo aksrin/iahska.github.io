@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Android Chess</title>
+    <style>/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #00ccff;
+  padding: 20px 10px;
+}
+
+.main {
+  overflow: hidden;
+  background-color: #e6e6e6;
+  padding: 20px 10px 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}</style>
+  </head>
+  <body>
+    <div class="header">
+        <a href="index.html" class="logo">Akshai Srinivasan</a>
+        <div class="header-right">
+        <a href="index.html">Home</a>
+        <a href="astar.html">A* Search</a>
+        <a href="adv.html">Adversarial Search</a>
+        <a class="active" href="androidchess.html">Android Chess</a>
+  </div>
+      
+  
+    </div>
+    <br>
+    <div class="main">On this page there is chess, which has been made as an android app.<br><br>
+      <img src="chess1.png" alt="chess" width="400">
+      <br>
+      <br>
+      It fully implements the game of chess as an app, runnable on any android device using android 10 or higher. The player has the option to undo their last move, have the ai move for them, offer/accept a draw, and to resign. 
+      <br>
+      <br>
+      After the game has ended, the user has the option to save a replay of the game.
+      <br>
+      <br>
+      <img src="chess2.png" alt="chess" width="400">
+      <br>
+      <br>
+      A list of replays can be seen from the main menu, sorted by either name or date.
+      <br>
+      <br>
+      A user can view a saved replay turn by turn.
+      <br>
+      <br>
+      <img src="chess3.png" alt="chess" width="400">
+      <br>
+      <br>      
+      This project can be downloaded <a href="adv.py">here</a>.
+    </div>
+  </body>
+</html>
